@@ -1,0 +1,11 @@
+version: '3.4'
+
+services:
+  ois-ml-calccrashpipe:
+    image: int-ois-docker.asuproject.ru/ml/ois.ml.calccrashpipe${imagetag-}
+    restart: always
+    build:
+      context: .
+    ports:
+      - 5000:5000
+      
